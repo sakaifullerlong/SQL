@@ -47,7 +47,7 @@ WHERE category="Kitchen Supplies"
 SELECT min(price)
 FROM superstore;
 
-#Show another statistic about the price for items in the catrgory of "Kitchen Supplies". 
+#Show another statistic about the price for items in the category of "Kitchen Supplies". 
 SELECT min(price)
 FROM superstore
 WHERE category="Kitchen Supplies"
