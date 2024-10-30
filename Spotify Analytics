@@ -35,6 +35,7 @@ artist_name
 ,avg(popularity)
 ,avg(danceability)
 ,avg(energy)
+,avg(tempo)
 FROM BIT_DB.spotifydata
 GROUP BY artist_name, track_name
 
