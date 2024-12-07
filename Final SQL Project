@@ -107,8 +107,12 @@ SELECT FirstName, LastName, CustomerId, Country
 FROM chinook.customers 
 WHERE Country = "USA";
 
-#15. Which customers have made more than one purchase? Include their full name, customer ID, and the count of invoices they have.
+#16. How many Invoices were there in 2010?
+SELECT COUNT(*)
+FROM chinook.Invoices
+WHERE InvoiceDate BETWEEN '2010-01-01' AND '2010-12-31';
 
-#16. Which tracks have never been purchased? Include the track name and album name.
-
-#17.What are the top 3 most popular music genres by total sales? Include the genre name and total sales amount.
+#17. What are the total sales for 2010?
+SELECT SUM(Total)
+FROM chinook.Invoices
+WHERE InvoiceDate BETWEEN '2010-01-01' AND '2010-12-31';
